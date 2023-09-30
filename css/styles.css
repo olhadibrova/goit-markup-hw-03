@@ -237,6 +237,7 @@ background-color: #404bbf;
 .team-container{}
 
 .team-title {
+  margin: 0;
   color: #2E2F42;
   font-size: 36px;
   font-weight: 700;
@@ -257,6 +258,9 @@ background-color: #404bbf;
   background-color: #FFFFFF;
   width: calc((100%-72px)/4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-img {
@@ -311,17 +315,15 @@ background-color: #404bbf;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
-  background-color: #FFF;
-  width: calc((100%-48px)/6);
-  border: 1px solid var(--CORNFLOWER, #E7E9FC);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  padding-bottom: 32px;
+  text-align: left;
+ background: #fff;
+    width: calc((100% - 48px) / 3);
 }
-
 .portfolio-img {
   display: block;
   max-width: 100%;
@@ -334,7 +336,7 @@ background-color: #404bbf;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 16px 8px 32px;
+  padding: 32px 16px 32px 16px;
 }
 
 .portfolio-item-text {
@@ -343,8 +345,12 @@ background-color: #404bbf;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left:32px;
+  padding-left: 32px;
   padding-right: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 
@@ -353,15 +359,16 @@ background-color: #404bbf;
 
 .footer {
   background: #2E2F42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  flex-shrink: 0;
+  padding: 100px 0;
 }
 
- .portfolio-container{
-  
+ .footer-container{
+  gap: 17.5px;
  }
 
 .footer-logo {
+
   color: #4D5AE5;
   font-size: 18px;
   font-weight: 700;
@@ -369,7 +376,8 @@ background-color: #404bbf;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-left: 156px;
+ 
+
 }
 
 .footer-logo-studio {
@@ -390,6 +398,4 @@ background-color: #404bbf;
  line-height: 1.5;
  letter-spacing: 0.02em;
  max-width:264px ;
-margin-top: 17.5px;
-margin-left: 156px;
-}
+ margin: 0;
